@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="イラストレーターsaekiのwebサイトです。イラストの紹介、料金表。イラストのご依頼受け付けています。">
+
+<title>saeki top</title>
+<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="favicon2.ico">
+<script type="text/javascript">
+</script>
+<script>
+$(function(){
+	//#nav-toggleをクリックした時の設定
+	$("#nav-toggle").on("click",function(){
+
+		//ナビゲーションメニューを開閉
+		$("nav ul").slideToggle();
+
+		//#nav-toggleにクラス名[open]を追加・削除
+		$(this).toggleClass("open");
+	});
+});
+</script>
+<script>
+$(function() {
+  var topBtn = $('.top');
+  topBtn.hide();
+  //スクロールが100に達したらボタン表示
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+          topBtn.fadeIn();
+      } else {
+          topBtn.fadeOut();
+      }
+  });
+  //スクロールしてトップ
+  topBtn.click(function () {
+      $('body,html').animate({
+          scrollTop: 0
+      }, 500);
+      return false;
+  });
+});
+</script>
+<script>
+$(function () {
+  const fade_bottom = 50; // 画面下からどの位置でフェードさせるか(px)
+  const fade_move = 100; // どのぐらい要素を動かすか(px)
+  const fade_time = 800; // フェードの時間(ms)
+  // フェード前のcssを定義
+  $(".sec3 .tool img").css({
+    opacity: 0,
+    transform: "translateX(-" + fade_move + "px)",
+    transition: fade_time + "ms",
+  });
+  // スクロールまたはロードするたびに実行
+  $(window).on("scroll load", function () {
+    const scroll_top = $(this).scrollTop();
+    const scroll_bottom = scroll_top + $(this).height();
+    const fade_position = scroll_bottom - fade_bottom;
+    $(".sec3 .tool img").each(function () {
+      const this_position = $(this).offset().top;
+      if (fade_position > this_position) {
+        $(this).css({
+          opacity: 1,
+          transform: "translateX(0)",
+        });
+      }
+    });
+  });
+});
+</script>
+<script>
+	$(function () {
+  const fade_bottom = 50; // 画面下からどの位置でフェードさせるか(px)
+  const fade_move = 100; // どのぐらい要素を動かすか(px)
+  const fade_time = 800; // フェードの時間(ms)
+  // フェード前のcssを定義
+  $(".sec3 .my img").css({
+    opacity: 0,
+    transform: "translateX(-" + fade_move + "px)",
+    transition: fade_time + "ms",
+  });
+  // スクロールまたはロードするたびに実行
+  $(window).on("scroll load", function () {
+    const scroll_top = $(this).scrollTop();
+    const scroll_bottom = scroll_top + $(this).height();
+    const fade_position = scroll_bottom - fade_bottom;
+    $(".sec3 .my img").each(function () {
+      const this_position = $(this).offset().top;
+      if (fade_position > this_position) {
+        $(this).css({
+          opacity: 1,
+          transform: "translateX(0)",
+        });
+      }
+    });
+  });
+});
+</script>
+	<script>
+	$(function () {
+  const fade_bottom = 50; // 画面下からどの位置でフェードさせるか(px)
+  const fade_move = 100; // どのぐらい要素を動かすか(px)
+  const fade_time = 800; // フェードの時間(ms)
+  // フェード前のcssを定義
+  $("#v").css({
+    opacity: 0,
+    transform: "translateY(" + fade_move + "px)",
+    transition: fade_time + "ms",
+  });
+  // スクロールまたはロードするたびに実行
+  $(window).on("scroll load", function () {
+    const scroll_top = $(this).scrollTop();
+    const scroll_bottom = scroll_top + $(this).height();
+    const fade_position = scroll_bottom - fade_bottom;
+    $("#v").each(function () {
+      const this_position = $(this).offset().top;
+      if (fade_position > this_position) {
+        $(this).css({
+          opacity: 1,
+          transform: "translateY(0)",
+        });
+      }
+    });
+  });
+});
+</script>
+</head>
+
+<body>
+<div id="all">
+  <header>
+
+    <h1><a href="index.html"><img src="img/logo.png"  alt="サエキロゴ" width="130" id="logo"/></a>
+    </h1>
+    <nav>
+      <div id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="#sec3">ABOUT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="sec1">
+    <div class="slide-outer">
+      <button class="text1"><a href="gallery.html">VIEW COLLECTION</a></button>
+		<!--<h2 class="text2">PORTFOLIO</h2>-タイトル？-->
+      <div class="slide">
+        <p><img src="img/photo3.jpg"alt="トップイラスト" width="1200" height="492"/></p>
+        <p><img src="img/photo2.jpg"  alt="トップイラスト" width="1200" height="492"/></p>
+        <p><img src="img/photo1.jpg"  alt="トップイラスト" width="1200" height="492"/></p>
+        <p><img src="img/photo4.jpg"  alt="トップイラスト" width="1200" height="492"/></p>
+        <p><img src="img/photo5.jpg"  alt="トップイラスト" width="1200" height="492"/></p>
+      </div>
+      <div class="slide-btn">
+        <p><a href="#" class="btn-prev"><img src="img/btn-prev.png" width="60" height="60" alt=""/></a></p>
+        <p><a href="#" class="btn-next"><img src="img/btn-next.png" width="60" height="60" alt=""/></a></p>
+      </div>
+    </div>
+	  <div class="slide-pg"></div>
+  </section>
+  <section class="sec2">
+    <h2>NEWS</h2>
+    <ul>
+      <li>
+        <div class="day">2023.x.xx</div>
+        <div class="label"><img src="img/nezumi.png" width="50"  alt=""/></div>
+        <div class="text">newsnewsnews</div>
+
+      </li>
+      <li>
+        <div class="day">2023.x.xx</div>
+        <div class="label"><img src="img/nezumi.png" width="50"  alt=""/></div>
+        <div class="text">newsnewsnewsnewsnewsnewsnews</div>
+
+      </li>
+      <li>
+        <div class="day">2023.x.xx</div>
+        <div class="label"><img src="img/nezumi.png" width="50"  alt="ネズミのアイコン"/></div>
+        <div class="text">newsnewsnewsnewsnewsnews</div>
+      </li>
+    </ul>
+  </section>
+  <section class="sec3" id="sec3">
+    <h2>ABOUT</h2>
+    <div class="my">
+      <div class="img">
+        <p><img src="img/kao.jpg" width="278" height="278" alt="自己紹介画像"/></p>
+      </div>
+      <div class="mozi">
+        <p>saeki tsubura</p>
+        <p>東京在住　フリーランスイラストレーターとして活動</p>
+        <p>デザイン系専門学校卒業</p>
+        <p>女の子のイラストが得意</p>
+        <p>女の子のかわいさ、を意識して描いています。</p>
+      </div>
+    </div>
+    <div class="tool">
+      <div class="img">
+        <p><img src="img/pen.png" width="139" height="177" alt="ツール"/></p>
+      </div>
+      <div class="mozi">
+        <p>使用ツール</p>
+        <p>Clip Studio</p>
+        <p>Adobe Photoshop</p>
+        <p>Adobe illustrator</p>
+      </div>
+    </div>
+    <div class="video">
+  <h3>タイムラプス</h3>
+      <video controls id="v">
+        <source src="video.mp4" type="video/mp4">
+        <p>動画を再生できません。</p>
+      </video>
+    </div>
+  </section>
+  <section class="sec4">
+    <p class="contact"><a href="contact.html">CONTACT</a></p>
+    <p class="price"><a href="contact.html#p">PRICE</a></p>
+  </section>
+    <footer>
+    <div class="sns">
+      <p><a href="#">TWITTER</a></p>
+      <p><a href="#">PIXIV</a></p>
+      </div>
+	  <div class="top"><a href="#all"><img src="img/top.png" alt="ページトップ" width="80"/></a></div>
+    <!--<p><a href="#all">home</a>|<a href="#sec3">about</a>|<a href="gallery.html">gallery</a>|contact</p>-->
+    <p class="copy">&copy;saekitsubura</p>
+    </footer>
+</div>
+</body>
+</html>

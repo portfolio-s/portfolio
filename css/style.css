@@ -1,0 +1,269 @@
+@charset "utf-8";
+/* by https://webtan.tech/ */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+html{
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+  animation: fadeIn 2.5s forwards;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2c2c2c;
+    font-family: "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", serif;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+p+p {
+    margin-top: 15px;
+}
+
+
+.header {
+    display: flex;
+    background: #f5fdff;
+}
+.myimg img{
+margin: 0px auto 50px;;
+width: 150px;
+border-radius: 50%;
+border: solid 5px #f7c3bf;
+}
+div .myimg{
+  text-align: center;
+}
+.header_info {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
+    font-family:　'Asap', sans-serif;
+}
+.header h2 {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 0.2em;
+    margin-top: 30px;
+    font-family: 'Asap', sans-serif;
+}
+
+
+.header_info p {
+    text-align: center;
+
+}
+
+
+
+.header_img {
+    width: 60%;
+}
+
+section {
+    padding: 70px 0;
+}
+
+
+.title {
+    font-size: 50px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 50px;
+   color: #fff;
+  font-family: 'Asap', sans-serif;
+}
+body :nth-child(2n) .title{
+   color: #8ac8cf;
+}
+
+.inner {
+    width: 1000px;
+    max-width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
+}
+
+.about_box {
+    width: 320px;
+    max-width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 5px #73798f;
+}
+
+.about_box h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.bg_gradient {
+    background: #f7c3bf;
+    /* background: linear-gradient(45deg, rgb(168, 221, 235) 0%, rgba(223, 237, 241, 1) 100%); */
+}
+
+.works_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery_box:first-child {
+    width: 400px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+.gallery_box:nth-child(2) {
+    width: 400px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.gallery_box {
+    width: 300px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.works_img {
+    padding: 10px;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.works_info {
+    margin-top: auto;
+    border: 1px dotted #aaa;
+    background: #f8fdfe;
+    padding: 10px;
+    font-size: 14px;
+}
+.contact_btn{
+
+    border-radius: 20px;
+    padding: 10px 0px;
+    display: block;
+    width: 350px;
+    margin: 50px auto;
+    color: #2c2c2c;
+    background-color: #fff;
+
+}
+.contact_btn p{
+  text-align: center;
+}
+.contact_btn p:first-child{
+  margin: 10px;
+}
+.copyright {
+    background-color: #8ac8cf;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.footer_logo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer_logo img {
+    width: 80px;
+}
+
+@media screen and (max-width:768px) {
+    .header {
+        display: block;
+    }
+
+    .header_info, .header_img {
+        width: 100%;
+    }
+
+    .header_info_inner {
+        padding: 30px;
+    }
+
+    .about_box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .works_gallery {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .gallery_box {
+        width: 48%;
+    }
+    .gallery_box:first-child {
+        width: 100%;
+
+
+    }
+    .gallery_box:nth-child(2) {
+        width: 100%;
+
+    }
+    .header h1 {
+        font-size: 40px;
+    }
+    .header h2 {
+
+        font-size: 40px;
+
+    }
+    .gallery_box:first-child {
+margin-right: 0px;
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .works_gallery {
+        display: block;
+    }
+
+    .gallery_box {
+        width: 100%;
+    }
+}

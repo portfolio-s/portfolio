@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>職業訓練 レスポンシブ練習</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+<script>
+$(function(){
+	//#nav-toggleをクリックした時の設定
+	$("#nav-toggle").on("click",function(){
+		
+		//ナビゲーションメニューを開閉
+		$("nav ul").slideToggle();
+		
+		//#nav-toggleにクラス名[open]を追加・削除
+		$(this).toggleClass("open");
+	});
+});
+</script>
+</head>
+
+<body id="top">
+<header>
+  <div class="inner">
+    <h1><a href="index.html"><img src="img/logo.png" width="126" height="166" alt="海月（くらげ）"/></a></h1>
+    <nav>
+	  <div id="nav-toggle">
+		<span></span>
+		<span></span>
+		<span></span>
+	  </div>
+      <ul>
+        <li><a href="#top"><img src="img/btn-top.png" width="51" height="25" alt="TOP"/></a></li>
+        <li><a href="#sec1"><img src="img/btn-jellyfish1.png" width="66" height="29" alt="くらげ"/></a></li>
+        <li><a href="#sec2"><img src="img/btn-jellyfish2.png" width="184" height="29" alt="くらげを見に行こう"/></a></li>
+        <li><a href="#sec3"><img src="img/btn-jellyfish3.png" width="184" height="29" alt="くらげを飼育しよう"/></a></li>
+        <li><a href="#sec4"><img src="img/btn-jellyfish4.png" width="164" height="29" alt="くらげを食べよう"/></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="mainimage">
+    <div class="inner">
+	  <picture>
+		<source srcset="img/catch-sp.png" media="(max-width:600px)" width="750" height="141">
+		<img src="img/catch-pc.png" width="1040" height="141" alt="ふわふわ、ゆらゆら　海月をたのしむ。"/>
+	  </picture>
+    </div>
+  </div>
+  <div class="inner">
+    <section class="sec1" id="sec1">
+      <h2><img src="img/title-jellyfish1.png" width="156" height="50" alt="くらげ"/></h2>
+      <div class="box-area">
+        <div class="box">
+          <figure><img src="img/photo-mizu.jpg" width="480" height="190" alt=""/></figure>
+          <h3>ミズクラゲ</h3>
+          <p>世界中の海に分布しています。<br>
+          傘の直径は15～30cmで、別名をヨツメクラゲとも言います。</p>
+        </div>
+        <div class="box">
+          <figure><img src="img/photo-tako.jpg" width="480" height="190" alt=""/></figure>
+          <h3>タコクラゲ</h3>
+          <p>関東以南に分布しています。<br>
+          傘の直径は10～20cmで、傘に水玉模様があるのが特徴です。</p>
+        </div>
+        <div class="box">
+          <figure><img src="img/photo-aka.jpg" width="480" height="190" alt=""/></figure>
+          <h3>アカクラゲ</h3>
+          <p>北海道以南に生息している種類です。<br>
+          傘の直径は約20cmで、傘に放射状の赤い縞模様が入っているのが特徴です。</p>
+        </div>
+        <div class="box">
+          <figure><img src="img/photo-oki.jpg" width="480" height="190" alt=""/></figure>
+          <h3>オキクラゲ</h3>
+          <p>黒潮海流域二生息しています。<br>
+          傘の直径は5～7cmで、日本には黒潮に乗ってやってきます。 </p>
+        </div>
+      </div>
+    </section>
+    <section class="sec2" id="sec2">
+      <h2><img src="img/title-jellyfish2.png" width="274" height="50" alt="くらげを見に行こう"/></h2>
+      <div class="box-area">
+        <div class="box">
+          <figure class="youtube"><iframe width="560" height="315" src="https://www.youtube.com/embed/JW8jUFV_k9Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></figure>
+          <h3>くらげ万華鏡トンネル</h3>
+          <p>全長50メートルのスロープに、色鮮やかな照明に照らされた8つのクラゲ水槽を設置し、壁と天井の3面に約5,000枚の四角形や三角形の鏡を敷き詰めることで、まるでクラゲと一緒に鏡の中の世界を漂っているような浮遊体験ができる。</p>
+          <p class="box-link">すみだ水族館　<a href="http://www.sumida-aquarium.com/" target="_blank">http://www.sumida-aquarium.com/</a></p>
+        </div>
+        <div class="box">
+          <figure class="youtube"><iframe width="560" height="315" src="https://www.youtube.com/embed/g93MMg_At6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></figure>
+          <h3>くらげライフ</h3>
+          <p>約10種類のクラゲの展示により、クラゲの魅力あふれる生態や多様性を紹介すると共に、最新のデジタル映像技術でクラゲの不思議な生活史を再現するコーナーを開設し、より楽しく、わかりやすく学ぶことができる参加体験型の展示施設。<br>
+          </p>
+          <p class="box-link">鴨川シーワールド　<a href="http://www.kamogawa-seaworld.jp/" target="_blank">http://www.kamogawa-seaworld.jp/</a></p>
+        </div>
+      </div>
+    </section>
+    <section class="sec3" id="sec3">
+      <h2><img src="img/title-jellyfish3.png" width="274" height="50" alt="くらげを飼育しよう"/> </h2>
+      <figure><img src="img/photo-shiiku.jpg" width="480" height="190" alt=""/></figure>
+      <p>クラゲは魚のように泳ぐ能力があまりなく、潮の流れに乗って移動しています。そのため流れのない水槽に入れてしまうと傘の開閉で動ける範囲に限られて底の方から動けなくなってしまいます。</p>
+      <p>そこで丸い形をしたクラゲ専用の水槽が販売されるようになり、ろ過装置の水流によって自然な流れを実現しました。ただし、専用水槽はかなり高額なためこれからクラゲ飼育を始める方にとっては少しハードルが高いでしょう。</p>
+      <p>そういった際には水槽の奥行きとマッチする薄いアクリル板を円を描くように曲げて水槽に設置してみましょう。外部フィルターが作る水流をうまく利用すればクラゲに最適な水流を作ることができますし、アクリル板の外側にヒーターやフィルターの吸い込みがくるようにするとクラゲが傷つく心配はありません。</p>
+      <p>餌に関しては行き餌を好む傾向にあるためブラインシュリンプを沸かしてスポイトでクラゲの傘に吹きかけてあげるように与えます。クラゲは水質悪化にも極端に敏感なため最低でも3日に一度は3分の1ほどの水量を換水するようにしてください。</p>
+    </section>
+    <section class="sec4" id="sec4">
+      <h2><img src="img/title-jellyfish4.png" width="254" height="50" alt="くらげを食べよう"/></h2>
+      <table>
+        <tbody>
+          <tr>
+            <th scope="row">エチゼンクラゲ</th>
+            <td>傘が2メートルにもなく大型で、名前の由来になっている「越前」の福井県だけではなく、日本海沿岸全域で収穫されます。</td>
+          </tr>
+          <tr>
+            <th scope="row">ビゼンクラゲ</th>
+            <td>傘が50センチ～1メートルほどで、やはりその名の通り「備前」岡山県が名産地です。<br>
+            エチゼンクラゲよりも品質が高いと評価されています。</td>
+          </tr>
+          <tr>
+            <th scope="row">ミズクラゲ</th>
+            <td>弱い毒性があり食べてはいけません。</td>
+          </tr>
+          <tr>
+            <th scope="row">タコクラゲ</th>
+            <td>弱い毒性があり食べてはいけません。</td>
+          </tr>
+          <tr>
+            <th scope="row">アカクラゲ</th>
+            <td>強い毒性があり食べてはいけません。触る事も危険です。</td>
+          </tr>
+          <tr>
+            <th scope="row">オキクラゲ</th>
+            <td>強い毒性があり食べてはいけません。触る事も危険です。</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>主に、上記２種類（エチゼンクラゲ・ビゼンクラゲ）が代表的な食用クラゲです。<br>
+      乾燥させた食材が、一般に中華風和えものなどに使われています。</p>
+    </section>
+  </div>
+  <p class="gotop"><a href="#top"><img src="img/btn-gotop.png" width="90" height="105" alt="TOP"/></a></p>
+</main>
+<footer>
+  <div class="inner">
+    <p class="footer-link">｜ <a href="#top">TOP</a> ｜ <a href="#sec1">くらげ</a> ｜ <a href="#sec2">くらげを見に行こう</a> ｜ <a href="#sec3">くらげを飼育しよう</a> ｜ <a href="#sec4">くらげを食べよう</a> ｜</p>
+    <p>Copyright &copy; 職業訓練Lesson All Rights Reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

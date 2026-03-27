@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>contact</title>
+<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/lightbox.min.js"></script>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="css/lightbox.min.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="favicon2.ico">
+<script type="text/javascript">
+</script>
+<script>
+$(function(){
+	//#nav-toggleをクリックした時の設定
+	$("#nav-toggle").on("click",function(){
+
+		//ナビゲーションメニューを開閉
+		$("nav ul").slideToggle();
+
+		//#nav-toggleにクラス名[open]を追加・削除
+		$(this).toggleClass("open");
+	});
+});
+</script>
+<script>
+$(function() {
+  var topBtn = $('.top');
+  topBtn.hide();
+  //スクロールが100に達したらボタン表示
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+          topBtn.fadeIn();
+      } else {
+          topBtn.fadeOut();
+      }
+  });
+  //スクロールしてトップ
+  topBtn.click(function () {
+      $('body,html').animate({
+          scrollTop: 0
+      }, 500);
+      return false;
+  });
+});
+</script>
+</head>
+
+<body>
+<div id="all3">
+  <header>
+    <h1><a href="index.html"><img src="img/logo.png"  alt="" width="130" id="logo"/></a>
+    </h1>
+    <nav>
+      <div id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#sec3">ABOUT</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="contact-page">
+    <h2>CONTACT</h2>
+    <div class="inner">
+      <p><a href="#mail"><img src="img/mail.png" width="77"alt=""/></a></p>
+      <p>イラストのご依頼、企業個人問わず受け付けてます。<br>
+      お見積りやご相談等、お気軽にお問い合わせください。</p>
+      <p>大体の価格が知りたい方はこちらの料金表をご参考ください。</p>
+      <p class="btn"><a href="#p">料金表</a></p>
+      <p>また、ココナラ（コミッションサイト）でもご依頼受付ています。</p>
+      <p class="btn"><a href="#">ココナラ</a>
+      </p>
+    </div>
+    <div class="form">
+      <h3 id="mail">お問い合わせフォーム</h3>
+      <form action="">
+
+        <p>
+          <input type="text" placeholder="お名前・会社名" name="name" required>
+
+          <input type="email" placeholder="メールアドレス" name="email" required>
+
+          <textarea placeholder="お問い合わせ内容" name="message" required></textarea>
+
+          <input type="submit" class="b" value="送信">
+        </p>
+
+      </form>
+      <ol>
+        <li>料金表に著作権の譲渡は含まれておりません。</li>
+        <li>制作物はサンプルとして公表することがございます。公開NGの場合はお知らせください。</li>
+        <li>料金表はあくまで参考です。料金表以外のものでもお受けできます。お気軽にご相談ください。</li>
+      </ol>
+      <h3 id="p">参考料金表</h3>
+  <table>
+    <thead>
+        <tr>
+            <th>基本料金（1人当たりの値段）</th>
+            <th>背景なし・単色</th>
+            <th>背景あり</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>正方形顔アップ（SNSアイコン・似顔絵等）</td>
+            <td>3000円～</td>
+            <td>4000円～</td>
+        </tr>
+        <tr>
+            <td>長方形バストアップ（SNSヘッダー等）</td>
+            <td>4000円～</td>
+            <td>5000円～</td>
+        </tr>
+        <tr>
+            <td>１枚絵（ポスター等）</td>
+            <td>5000円～</td>
+            <td>6000円～</td>
+        </tr>
+        <tr>
+            <td>全身イラスト（キャラクターデザイン・立ち絵等）</td>
+            <td>5000円～</td>
+            <td>×</td>
+        </tr>
+    </tbody>
+</table>
+
+    </div>
+  </section>
+  <section class="sec4">
+    <p class="contact"><a href="contact.html">CONTACT</a></p>
+    <p class="price"><a href="contact.html#p">PRICE</a></p>
+  </section>
+  <footer>
+    <div class="sns">
+      <p><a href="#">TWITTER</a></p>
+      <p><a href="#">PIXIV</a></p>
+      </div>
+	  <div class="top"><a href="#all3"><img src="img/top.png" alt="" width="80"/></a></div>
+    <!--<p><a href="#all">home</a>|<a href="#sec3">about</a>|<a href="gallery.html">gallery</a>|contact</p>-->
+    <p class="copy">&copy;saekitsubura</p>
+    </footer>
+</div>
+</body>
+</html>

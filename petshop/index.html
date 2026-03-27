@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="いっしょに暮らす、よろこびを。ワンちゃん・ねこちゃん・鳥さんが、あなたのお迎えを待っています！動物病院やペットホテル、トリミングなど家族に迎えた後もお客様をしっかりサポート。初めての方でも安心です。
+">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;800&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+<title>ペットショップテラ</title>
+<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+
+<script>
+$(function(){
+	//#nav-toggleをクリックした時の設定
+	$("#nav-toggle").on("click",function(){
+
+		//ナビゲーションメニューを開閉
+		$(".site-header ul").slideToggle();
+
+		//#nav-toggleにクラス名[open]を追加・削除
+		$(this).toggleClass("open");
+	});
+});
+</script>
+</head>
+
+<body>
+<div id="all">
+  <div class="main">
+    <header>
+  <img src="img/logo.png" width="50" alt="ペットショップテラ">
+      <nav class="site-header">
+      <div id="nav-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#">ペットを探す</a></li>
+          <li><a href="#">サポート</a></li>
+          <li><a href="#">アクセス</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="topimg">
+      <p class="mainimg"><img src="img/mainimg2.jpg" alt="ペットショップテラ"/></p>
+      <h1 class="logo"><a href="index.html"><img src="img/logo.png" width="176" height="176" alt="ペットショップテラ"/></a></h1>
+    </div>
+    <div class="pa">
+  <section class="sec1">
+    <h2>ペットショップ・テラの想い</h2>
+    <p>ペットショップ・テラでは、動物病院やペットホテル、トリミングなど<br>
+      動物を家族に迎えた後も飼い主様が止むを得ず手放さないといけない状態を<br>
+      つくらないように飼い主様をしっかりサポートをしていきます。<br>
+      なので、初めての方でも安心して、動物を飼うことができます。<br>
+      一緒に動物も飼い主様を全力でサポートしたいと思います。</p>
+  </section>
+      <section class="sec2">
+        <h2>NEWS</h2>
+  <ul>
+    <li>
+      <div class="day">2023.9.23</div>
+      <div class="label"><img src="img/nikukyuu.png" width="36" height="26" alt=""/></div>
+      <div class="text">子犬が産まれました♪</div>
+
+      </li>
+    <li>
+      <div class="day">2023.9.18</div>
+      <div class="label"><img src="img/nikukyuu.png" width="36" height="26" alt=""/></div>
+      <div class="text">秋の4連休ふれあいコーナーのお知らせ</div>
+
+      </li>
+    <li>
+      <div class="day">2023.9.17</div>
+      <div class="label"><img src="img/nikukyuu.png" width="36" height="26" alt=""/></div>
+      <div class="text">10月のしつけ教室の予約が始まりました！</div>
+      </li>
+  </ul>
+      </section>
+      <section class="sec3">
+        <h2>当店人気動物ランキング</h2>
+        <ul class="ranking-box">
+          <li><a href="#"><img src="img/inu.png" alt=""><h3>いぬ</h3></a><p class="textbox">texttexttexttexttexttexttexttext</p></li>
+          <li><a href="#"><img src="img/neko.png" alt=""><h3>ねこ</h3></a><p class="textbox">texttexttexttexttext</p></li>
+          <li><a href="#"><img src="img/hamu.png" alt=""><h3>ハムスター</h3></a><p class="textbox">texttexttexttexttexttext</p></li>
+          <li><a href="#"><img src="img/tori.png" alt=""><h3>とり</h3></a><p class="textbox">texttexttexttexttexttexttext</p></li>
+        </ul>
+      </section>
+    </div>
+	 <div class="page_top"><a href="#all"></a></div>
+    <footer>
+  <p class="footermenu"><a href="index.html">HOME</a>｜<a href="#">ペットを探す</a>｜<a href="#">サポート</a>｜<a href="#">アクセス</a></p>
+      <p class="copy">&copy; petshop-tera</p>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

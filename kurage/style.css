@@ -1,0 +1,312 @@
+@charset "utf-8";
+body, p, h1, h2, h3, ul, figure {
+  padding: 0;
+  margin: 0;
+}
+img {
+  vertical-align: top;
+}
+body {
+  font-family: "BIZ UDPGothic", sans-serif;
+  line-height: 1.8;
+}
+a {
+  color: #0092c9;
+  text-decoration: none;
+	transition: 0.8s;
+}
+a:hover {
+  text-decoration: underline;
+}
+.inner {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1000px;
+}
+header {
+  background-color: #ff0;
+  border-top: 10px solid #EC008C;
+}
+header .inner {
+  position: relative;
+}
+header h1 {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  z-index: 1;
+}
+section {
+  margin-bottom: 80px;
+}
+section h2 {
+  background-color: #ffeed7;
+  border-bottom: 5px solid #EC008C;
+  margin-bottom: 40px;
+}
+.box-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: -40px;
+}
+.box {
+  width: 480px;
+  margin-top: 40px;
+}
+.box h3 {
+  margin: 30px 0 20px;
+  font-size: 1.125em;
+}
+.box-link {
+  margin-top: 20px;
+}
+.sec3 figure {
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+.sec3 p {
+  margin-bottom: 1.8em;
+}
+.sec4 table, .sec4 p {
+  margin: 0 auto;
+  width: 900px;
+}
+.sec4 table {
+  margin-bottom: 30px;
+  border-collapse: collapse;
+}
+.sec4 tr:nth-child(odd) {
+  background-color: #7accc8;
+}
+.sec4 tr:nth-child(even) {
+  background-color: #8dc63f;
+}
+.sec4 th, .sec4 td {
+  padding: 20px;
+  border: 1px solid #fff;
+  vertical-align: top;
+}
+.sec4 th {
+  text-align: left;
+  white-space: nowrap;
+}
+.gotop {
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
+  opacity: 0.7;
+}
+.gotop:hover {
+  opacity: 1;
+}
+footer {
+  padding: 30px 0;
+  background-color: #ec008c;
+  color: #fff;
+  text-align: center;
+}
+.footer-link {
+  margin-bottom: 200px;
+}
+.footer-link a {
+  color: #fff;
+}
+nav {
+  margin-left: 146px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav li {
+  flex-grow: 1;
+}
+nav a {
+  display: flex;
+  height: 65px;
+  justify-content: center;
+  align-items: center;
+}
+nav a:hover {
+  background-color: #ec008c;
+}
+main {
+  display: block;
+}
+.mainimage {
+  background-image: url(img/mainimage-pc.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+.mainimage .inner {
+  height: 480px;
+  position: relative;
+}
+.mainimage img {
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+}
+.youtube {
+    aspect-ratio: 16/9;
+}
+.youtube iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width:1040px){
+body {
+    background-color: #50FF74;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.inner {
+    width: calc(100% - 40px);
+}
+nav ul {
+    flex-wrap: wrap;
+}
+nav a {
+    padding: 0 10px;
+}
+section h2 {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.box, .sec3 figure {
+    width: 48%;
+}
+.sec3 figure {
+    margin-right: 4%;
+    margin-bottom: 4%;
+}
+.sec4 table, .sec4 p {
+    width: 90%;
+}
+.footer-link a {
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:600px){
+body {
+    background-color: #FFA8FE;
+}
+.box {
+    width: 100%;
+}
+figure {
+    text-align: center;
+}
+.sec3 figure {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.sec4 table, .sec4 p {
+    width: 100%;
+}
+.sec4 th, .sec4 td {
+    display: block;
+}
+.sec4 th {
+    border-bottom-style: none;
+}
+.footer-link {
+    margin-bottom: 40px;
+}
+.mainimage {
+    background-image: url(img/mainimage-sp.jpg);
+}
+.mainimage .inner {
+    padding: 0;
+    height: auto;
+    aspect-ratio: 750/495;
+}
+header h1 {
+    width: 16.8vw;
+}
+.gotop {
+    width: 14vw;
+}
+nav {
+    margin-left: 0px;
+}
+nav ul {
+    display: none;
+    padding-bottom: 50px;
+}
+#nav-toggle {
+    width: 70px;
+    height: 50px;
+    margin-left: auto;
+    position: relative;
+    right: -20px;
+}
+#nav-toggle span {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    position: absolute;
+    left: 20px;
+	transition: 0.5s;
+}
+#nav-toggle span:nth-child(1) {
+    top: 12px;
+}
+#nav-toggle span:nth-child(2) {
+    top: 23px;
+}
+#nav-toggle span:nth-child(3) {
+    top: 34px;
+}
+#nav-toggle.open span:nth-child(1){
+	top:23px;
+	transform:rotate(315deg)
+}
+#nav-toggle.open span:nth-child(2){
+	width: 0;
+	left: 50%;
+}
+#nav-toggle.open span:nth-child(3){
+	top:23px;
+	transform:rotate(-315deg);
+	transform
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (min-width:601px){
+	nav ul{
+		display: flex !important;
+	}
+}

@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>株式会社〇〇求人ページ</title>
+<meta name="description" content="株式会社〇〇の採用情報ページです
+IT業界未経験、中途採用、新卒採用、積極採用中です。
+株式会社で一緒に働きませんか？
+">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex" />
+<style type="text/css">
+</style>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="mobile.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-3.6.4.min.js"></script>
+	<script>
+	$(function(){
+		$("#nav-toggle").on("click",function(){
+			$(".nav2 ul").slideToggle();
+			$(this).toggleClass("open");
+		});
+	});
+		$(window).on("scroll",function(){
+			if ($(this).scrollTop()>30){
+				$(".nav2").fadeIn();
+			}else{
+				$(".nav2").fadeOut();
+			}
+			});
+</script>
+<script>
+	$(function() {
+	$("dt").on("click", function() {
+		$(this).next().slideToggle();
+		$(this).toggleClass("open");
+	});
+	const image = document.getElementById('small');{ // ロゴ画像
+// 画像を時計回りに1回転させる
+image.animate(
+  // 途中の状態を表す配列
+  [{ transform: 'rotate(0deg)' }, // 開始時の状態（0度）
+   { transform: 'rotate(360deg)' } // 終了時の状態（360度）
+  ],
+  // タイミングに関する設定
+  {
+    fill: 'backwards', // 再生前後の状態（再生前、開始時の状態を適用）
+    duration: 10000, // 再生時間（1000ミリ秒）
+    iterations: Infinity,  // アニメーションの繰り返し回数（ずっと繰り返す）
+  },);};
+	const image01 = document.getElementById('big');{ // ロゴ画像
+// 画像を時計回りに1回転させる
+image01.animate(
+  // 途中の状態を表す配列
+  [{ transform: 'rotate(0deg)' }, // 開始時の状態（0度）
+   { transform: 'rotate(-360deg)' } // 終了時の状態（360度）
+  ],
+  // タイミングに関する設定
+  {
+    fill: 'backwards', // 再生前後の状態（再生前、開始時の状態を適用）
+    duration: 10000, // 再生時間（1000ミリ秒）
+    iterations: Infinity,  // アニメーションの繰り返し回数（ずっと繰り返す）
+  },);}	;
+
+});
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+<header>
+  <div class="headerinner">
+    <h1><a href="#top"><img src="img/logoheader2.png" width="150" height="150" alt="success"/></a></h1>
+    <nav class="nav1">
+      <ul>
+        <li><a href="#sec1">About</a></li>
+        <li><a href="#sec2">Q&amp;A</a></li>
+        <li><a href="#sec3">Voice</a></li>
+        <li><a href="#sec4">Recruit</a></li>
+        <li><a href="#sec5">Access</a></li>
+        <li><a href="#sec6">Contact</a></li>
+      </ul>
+    </nav>
+	  <nav class="nav2">
+		<div id="nav-toggle">
+		 <span></span>
+		 <span></span>
+		 <span></span>
+		</div>
+      <ul>
+		 <li><a href="#top">HOME</a></li>
+        <li><a href="#sec1">About</a></li>
+        <li><a href="#sec2">Q&amp;A</a></li>
+        <li><a href="#sec3">Voice</a></li>
+        <li><a href="#sec4">Recruit</a></li>
+        <li><a href="#sec5">Access</a></li>
+        <li><a href="#sec6">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mainimg">
+		<p class="maintext"><span>Trust　People</span>
+		<img src="img/haguruma_big.png" alt="" width="241" height="248" class="haguruma_big" id="big"/>
+		<img class="haguruma_small" src="img/haguruma_small.png" width="162" height="165" alt="" id="small"/>
+		</p>
+    <div class="cloud">
+      <!--<p class="haguruma_big"><img src="img/haguruma_big.png" width="241" height="248" alt=""/></p>
+		<p class="haguruma_small"><img src="img/haguruma_small.png" width="162" height="165" alt=""/></p>-->
+      <div class="jinbutsuzou">
+       <ul> <li>　向上心を持って成長し続けたい！</li>
+        <li>　広い視野を持ち、環境の変化に対応できる！</li>
+        <li>　周囲への思いやり、助け合い、感謝を忘れない！</li></ul>
+        <p>　...こんなあなたを求めています！！</p>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="sec1" id="sec1">
+  <div class="inner">
+    <div class="innertext">
+      <h2>会社について</h2>
+      <div class="boxarea">
+        <p><img src="img/otoko.png" width="90" height="241" alt=""/></p>
+        <div class="box1">
+          <h3>株式会社〇〇</h3>
+          <p><strong>基幹システムのカスタマイズ</strong>、<strong>設計支援</strong>、システム<strong>基盤環境構築支援</strong>、システム<strong>運用管理</strong>など、これまでの経験と技術を用いてお客様のニーズに合わせたサービスの提供を目指している、<strong>老舗のソフトウェア開発会社</strong>です。</p>
+        </div>
+        <p><img src="img/onna.png" width="90" height="241" alt=""/></p>
+        <div class="box">
+          <h3>システム開発</h3>
+          <ul>
+            <li>穀物倉庫のパッケージシステムの開発保守</li>
+            <li>生産管理システムの開発保守</li>
+            <li>物流システムの開発保守</li>
+            <li>河川情報システムのデータ収集と解析…等</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>運用管理</h3>
+          <ul>
+            <li>通信系会社における社内システム運用管理</li>
+            <li>予備校システムの運用管理</li>
+            <li>金融系電算室の運用管理</li>
+            <li>物流倉庫システムの運用管理…等</li>
+          </ul>
+        </div>
+      </div>
+      <div class="funiki">
+        <p>みんな仲良く、社内イベント等も開催しています。家族参加OKな社員旅行の他に、<br>
+      現在はモルックやサバゲー等のスポーツイベントも企画しています。 <br><br>
+      現社長はアルバイトで入社し、キャリアアップしました！</p>
+        <div class="hpbox">
+	<a href="#"><p>会社ホームページはこちら<img src="img/kumo.png" alt=""/></p></a>
+	<div class="bd1 bd">
+		<div class="bdT"></div>
+		<div class="bdB"></div>
+		<div class="bdR"></div>
+		<div class="bdL"></div>
+	</div>
+</div>
+      </div>
+    </div>
+  </div>
+	</section>
+<section class="sec2" id="sec2">
+  <div class="inner">
+    <div class="innertext">
+      <h2>Q&amp;A</h2>
+      <dl>
+		<dt><div class="shitsumon">会社の強みは何ですか？</div></dt>
+        <dd><p>社員同士の信頼関係が厚く、<strong>定着率も良い</strong>事です。<br>
+		IT業界<strong>未経験者でもチャレンジしやすい</strong>環境を整えています。<br>
+		社員の前職は美容師、カメラマン、介護士等で、勤務年数は15年の方もいます。<br>
+         年1回昇給制度では、自己PRの機会を設けている為、<strong>ご自身の努力が評価に繋がります</strong>。<br>
+		資格取得手当や資格の更新手数料も会社で負担します。</p></dd>
+	    <dt><div class="shitsumon">勤務地はどこになりますか?</div></dt>
+        <dd><p><strong>東京近郊</strong>。神奈川や千葉など<strong>住まいを加味</strong>し、配属先を決めていきます。</p></dd>
+        <dt><div class="shitsumon">平均残業時間はどのぐらいですか？</div></dt>
+        <dd><p>繁忙期は月20時間程度してしていただく場合があります。</p></dd>
+        <dt><div class="shitsumon">研修期間はありますか？</div></dt>
+        <dd><p>新卒者は3ヶ月、中途採用者は1ヶ月の研修があります。</p></dd>
+        <dt><div class="shitsumon">平均年齢はどれぐらいですか？</div></dt>
+        <dd><p>37歳程です。20歳～53歳と<strong>幅広い年代の方が活躍</strong>しています。</p></dd>
+        <dt><div class="shitsumon">男女比率はどれぐらいですか？</div></dt>
+        <dd><p>9：1で今は男性が多い職場ですが、女性の採用も積極的に行っています。<br>
+		女性向けの<strong>福利厚生も充実</strong>していて、<strong>産前産後休暇の取得実績もあり</strong>ます。</p></dd>
+        </dl>
+    </div>
+  </div>
+</section>
+<section class="sec3" id="sec3">
+  <div class="inner">
+    <div class="innertext">
+      <h2>先輩の声</h2>
+      <div class="boxarea">
+        <div class="box"> <img src="img/senpaichan.png" width="220" height="212" alt=""/>
+          <h3>新卒で入社した社員</h3>
+          <p><strong>土日祝がお休みで、県外転勤がない</strong>ことなどに魅力を感じ、〇〇に応募しました。入社してみて、社員同士の交流が多く仕事やプライベートについても気軽に相談できたり、<strong>和気あいあい</strong>とした雰囲気で社会人<strong>経験のない私でも安心</strong>して仕事に取り組めます。</p>
+        </div>
+        <div class="box"> <img src="img/senpaikun.png" width="220" height="212" alt=""/>
+          <h3>中途で入社した社員</h3>
+          <p><strong>25年の社歴</strong>がある会社を創業し運営している会長からの「<strong>インフラエンジニアのは安定して長く収入を得ることができる</strong>」とのお言葉を受け、「きっとそうなんだろう」と思い、入社しました。入社して10年が経ちましたが、安定した生活を送ることができており、<strong>社員仲も良く</strong>、社長や経理担当の方は、仕事の 面だけではなく健康や私生活の悩みまで<strong> 親身になって相談に応じて</strong>くださいます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec4" id="sec4">
+  <div class="inner">
+    <div class="innertext">
+      <h2>募集要項</h2>
+      <table width="71">
+        <tbody>
+          <tr>
+            <th scope="row">募集職種</th>
+            <td>システムエンジニア・システム運用オペレーター</td>
+          </tr>
+          <tr>
+            <th scope="row">待遇</th>
+            <td>&yen;230,000-～&yen;250,000-<br>
+            昇給年一回、時間外手当、休日勤務手当</td>
+          </tr>
+          <tr>
+            <th scope="row">勤務時間</th>
+            <td>9時から18時（昼休憩１時間）<br>
+            その他、常駐先に準じます</td>
+          </tr>
+          <tr>
+            <th scope="row">勤務地</th>
+            <td>本社または常駐先<br>
+            （都内近郊、居住地により相談）</td>
+          </tr>
+          <tr>
+            <th scope="row">休日</th>
+            <td>完全週休２日、国民の休日、年末年始<br>
+              年間休日120日以上<br>
+            有給休暇（初年度10日）、夏季休暇、慶弔休暇、産前産後休暇、など</td>
+          </tr>
+          <tr>
+            <th scope="row">福利厚生</th>
+            <td>定期健康診断（会社負担での基本健診、希望者は人間ドックも可能）<br>
+              退職金制度<br>
+              社員旅行（家族参加OK、基本自由行動）<br>
+              資格取得支援金制度（資格取得・更新費用は会社負担）<br>
+              社会保険完備（健康保険、厚生年金、雇用保険、労災保険）<br>
+              慶弔金支給<br>
+            健康保険組合契約保養施設、スポーツ施設、レストラン等の優待利用</td>
+          </tr>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+      <div class="mensetu">
+        <div class="mensetutext">
+          <h3><span>採用の流れ</span></h3>
+          <div class="mensetsubig">
+			  <p>書類選考</p>
+			  <p>↓</p>
+			  <p>面接（一回）</p>
+          </div>
+          <p>面接時に筆記テスト（適性テスト、ストレス度チェック）あり</p>
+        </div>
+		  <p><img src="img/mensetu.png" width="209" height="178" alt="面接イラスト"/></p>
+	  </div>
+    </div>
+  </div>
+</section>
+<section class="sec5" id="sec5">
+  <div class="inner">
+    <div class="innertext">
+      <h2>アクセス</h2>
+	  <div class="sec5inner">
+        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25920.000094667943!2d139.67022889024815!3d35.701617321317016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2059b7fd4b%3A0xec61c68fe232efd2!2z5p2x5Lqs6YO95paw5a6_5Yy6!5e0!3m2!1sja!2sjp!4v1686688602767!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        <div class="add">
+          <p>〒141-0031<br>
+          東京都新宿区</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec6" id="sec6">
+  <div class="inner">
+    <div class="innertext">
+      <h2>問い合わせ・応募</h2>
+      <div class="sec6box">
+        <p><a href="tel:03-×××-×××"><img src="img/call.png" width="36" height="36" alt="電話"/>　03-6417-0410</a></p>
+        <p><a href="mailto:recruit@.co.jp"><img src="img/mail.png" width="36" height="36" alt="メール"/>　recruit@co.jp</a></p>
+      </div>
+      <div class="syousai">
+        <p>10:00～17:00(月～金)
+        </p>
+        <p>人事・営業担当　〇〇　まで</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="go">
+  <h3><a href="#sec6"><img src="img/oubo.png" width="141" height="132" alt="応募ボタン"/></a></h3>
+</div>
+<footer>
+  <p>Copyright&copy;2022 SUCCESS Co., Ltd</p>
+  <ul>
+        <li><a href="#sec1">About</a></li>
+        <li><a href="#sec2">Q&amp;A</a></li>
+        <li><a href="#sec3">Voice</a></li>
+        <li><a href="#sec4">Recruit</a></li>
+        <li><a href="#sec5">Access</a></li>
+        <li><a href="#sec6">Contact</a></li>
+      </ul>
+</footer>
+</body>
+</html>
