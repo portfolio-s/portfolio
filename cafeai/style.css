@@ -1,0 +1,227 @@
+/* 全体 */
+body {
+margin: 0;
+font-family: 'Zen Maru Gothic', sans-serif;
+background-color: #fff7f9;
+color: #5a4a4a;
+line-height: 1.8;
+}
+
+/* ヘッダー */
+header {
+height: 100vh;
+background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
+position: relative;
+}
+
+header::before {
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgba(255, 192, 203, 0.3);
+}
+
+header div {
+position: relative;
+}
+
+header h1 {
+font-size: 2.8em;
+margin-bottom: 10px;
+}
+.logo {
+  font-size: 32px;
+  font-family: cursive;
+  letter-spacing: 2px;
+  color: #ff69b4;
+}
+/* ボタン */
+.button {
+display: inline-block;
+padding: 10px 25px;
+background: #ffb6c1;
+color: white;
+text-decoration: none;
+border-radius: 30px;
+margin-top: 15px;
+transition: 0.3s;
+}
+
+.button:hover {
+background: #ff8fa3;
+}
+
+/* セクション */
+section {
+padding: 60px 20px;
+max-width: 1000px;
+margin: auto;
+text-align: center;
+}
+
+h2 {
+margin-bottom: 20px;
+color: #d17b88;
+}
+
+/* メニュー */
+.menu {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.card {
+background: white;
+border-radius: 20px;
+padding: 20px;
+width: 250px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+/* フッター */
+.footer {
+  background: #ffb6c1;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.sns a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: white;
+  font-size: 13px;
+  text-decoration: none;
+  color: #555;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.sns a:hover {
+  transform: translateY(-2px);
+  color: #ff69b4;
+}
+
+.copy {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #999;
+}
+
+iframe {
+  margin-top: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrapZ;
+}
+
+.payment-icons span {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 13px;
+  border: 1px solid #eee;
+}
+
+
+/* =======================
+   レスポンシブ対応
+======================= */
+
+/* タブレット（768px以下） */
+@media (max-width: 768px) {
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  .menu {
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
+/* スマホ（480px以下） */
+@media (max-width: 480px) {
+
+  header {
+    height: 80vh;
+  }
+
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  header p {
+    font-size: 0.9em;
+  }
+
+  .button {
+    padding: 8px 18px;
+    font-size: 0.9em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  section {
+    padding: 30px 10px;
+  }
+
+  iframe {
+    height: 250px;
+  }
+}
+
+
+/* 画像レスポンシブ（超重要） */
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* カード内画像だけちょい調整 */
+.card img {
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card img {
+  transition: 0.3s;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
