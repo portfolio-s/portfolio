@@ -16,17 +16,52 @@
 
 <body>
 
-<header>
-<div>
-<h1>Cafe AI</h1>
-<p>こだわりのコーヒーとチーズケーキ、落ち着く空間</p>
-<a href="#menu" class="button">メニューを見る</a>
-</div>
-</header>
+<header class="navbar">
+  <div class="nav-inner">
+    <h1 class="logo">Cafe AI</h1>
+    <nav><ul class="nav-list">
+      <li><a href="index.html" class="current" >top</a></li>
+      <li><a href="#menu">menu</a></li>
+      <li><a href="#access">access</a></li>
+      <li><a href="recruit.html">recruit</a></li>
+     <li class="insta">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <!-- インスタSVGアイコン -->
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <path fill="currentColor" d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 
+        2.24 5 5 5h10c2.76 0 5-2.24 
+        5-5V7c0-2.76-2.24-5-5-5H7zm5 
+        5a5 5 0 110 10 5 5 0 
+        010-10zm6.5-.75a1.25 1.25 0 
+        110 2.5 1.25 1.25 0 
+        010-2.5zM12 9a3 3 0 100 
+        6 3 3 0 000-6z"/>
+      </svg>
+    </a>
+  </li>
+    </ul>
+  </nav>
+  </div>
+  </header>
+  
+<section class="hero">
+  <div class="hero-text">
+    <h1>Cafe AI</h1>
+    <p>AIがあなたに最適なメニューを提案</p>
+    <a href="#menu" class="button">メニューを見る</a>
+  </div>
+</section>
 
 <section>
-<h2>私たちのこだわり</h2>
-<p>厳選されたコーヒー豆と、心地よい空間づくりを大切にしています。</p>
+  <h2>About Cafe AI</h2>
+  <p>
+    Cafe AIは、その日の気分や体調、過ごしたい時間に合わせて、
+    AIがあなたにぴったりのドリンクやスイーツをご提案する新しいカフェです。
+  </p>
+  <p>
+    ただ飲食を楽しむだけでなく、
+    “今の自分に合った心地よいひととき” をお届けすることを大切にしています。
+  </p>
 </section>
 
 <section id="menu">
@@ -34,33 +69,37 @@
 <div class="menu">
   <div class="card">
     <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600" alt="コーヒー">
-    <h3>コーヒー</h3>
-    <p>香り高い自家焙煎コーヒー</p>
+    <h3>集中したい</h3>
+    <p>深煎りコーヒーと軽食のセットでエネルギー補給</p>
   </div>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1652463843090-9204717dbc6e?w=600"" alt="スイーツ">
-    <h3>自家製チーズケーキ</h3>
-    <p>手作りチーズケーキが人気</p>
+    <img src="https://images.unsplash.com/photo-1652463843090-9204717dbc6e?w=600" alt="スイーツ">
+    <h3>リラックスしたい</h3>
+    <p>さしい香りのラテと甘さ控えめスイーツ</p>
   </div>
 
   <div class="card">
-    <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589?w=600" alt="軽食">
-    <h3>ハンバーガー</h3>
-    <p>ジューシーな牛肉パテのハンバーガー</p>
+    <img src="https://images.unsplash.com/photo-1583898350903-99fa829dad3d?w=600" alt="ドリンク">
+    <h3>ゆったりしたい夜</h3>
+    <p>カフェイン控えめドリンクと落ち着く空間</p>
   </div>
 </div>
 </section>
 
+<!-- <h2>あなたにおすすめの一杯は？</h2>
+<p>AIがあなたの気分に合わせてご提案します</p>
+<button>診断する</button>-->
+
 <section>
-<h2>おすすめ</h2>
-<p>人気No.1 カフェラテ / 濃厚チーズケーキ</p>
+<h2>あなたにおすすめの一杯は？</h2>
+<p>AIがあなたの気分に合わせてご提案します。</p>
 </section>
 
 <section>
 <h2>店舗情報</h2>
 <p>
-Cafe Sample<br>
+Cafe AI<br>
 東京都渋谷区〇〇<br>
 営業時間：11:00〜20:00<br>
 定休日：水曜日
@@ -68,6 +107,11 @@ Cafe Sample<br>
 </section>
 
 <section>
+<h2>ご予約</h2>
+<p>Instagramのメッセージから、もしくは<a href="https://tabelog.com/" target="_blank" rel="noopener noreferrer">食べログ</a>からお願いします。</p>
+</section>
+
+<section id="access">
   <h2>アクセス</h2>
   <p>渋谷駅から徒歩5分</p>
 
@@ -81,7 +125,7 @@ Cafe Sample<br>
   </iframe>
 </section>
 
-<section class="payment">
+<section id="payment" class="payment">
   <h2>お支払い方法</h2>
   <div class="payment-icons">
 　　<span>現金</span>
@@ -99,7 +143,7 @@ Cafe Sample<br>
     <a href="#">X</a>
     <a href="#">LINE</a>
   </div>
-  <p class="copy">© 2026 Cafe Sample</p>
+  <p class="copy">© 2026 Cafe AI</p>
 </footer>
 
 </body>
